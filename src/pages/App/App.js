@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
-import DifferentThings from '../DifferentThings'
+import DifferentThings from '../DifferentThings/DifferentThings'
 import Home from '../Home/Home';
 
 
@@ -68,7 +68,7 @@ const App = () => {
         {/* All the <Route> components should live here */}
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
-        <Route path='/the-well-different-things' element={<DifferentThings things={ramonsThings} />} />
+        <Route path='/the-different-things' element={<DifferentThings things={ramonsThings} />} />
       </Routes>
     </>
   );
