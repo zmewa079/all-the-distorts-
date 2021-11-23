@@ -4,6 +4,8 @@ import './App.css';
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import DifferentThings from '../DifferentThings/DifferentThings'
+import UniversalThings from '../UniversalThings/UniversalThings'
+import RandomThings from '../RandomThings/RandomThings'
 import Home from '../Home/Home';
 
 
@@ -79,6 +81,23 @@ const App = () => {
       attributes: ["chunky", "claustrophobic", "isolated", "family"]
     }
   ])
+  const [jansThings] = useState([
+    {
+      name: "books",
+      image: "https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg",
+      attributes: ["fun to read", "hobby", "collectable"]
+    },
+    {
+      name: "coffee",
+      image: "https://cdn.pixabay.com/photo/2017/03/17/10/29/coffee-2151200_960_720.jpg",
+      attributes: ["strong", "cappuccino", "latte", "americano"]
+    },
+    {
+      name: "music",
+      image: "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764_960_720.jpg",
+      attributes: ["kpop", "pop", "indie", "anything that sounds nice BUT country"]
+    },
+  ])
   return (
     <>
       <Routes>
@@ -87,10 +106,11 @@ const App = () => {
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
         <Route path='/the-different-things' element={<DifferentThings things={ramonsThings} />} />
-        <Route path='/the-universal-things' element={<DifferentThings things={joshThings} />} />
+        <Route path='/the-universal-things' element={<UniversalThings things={joshThings} />} />
+        <Route path='/the-random-things' element={<RandomThings things={jansThings} />} />
       </Routes>
     </>
   );
 }
- 
+
 export default App;
