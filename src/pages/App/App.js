@@ -61,6 +61,24 @@ const App = () => {
       attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
     },
   ])
+
+  const [joshThings] = useState([
+    {
+      name: "Galaxy",
+      image: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/potw2109a.jpg",
+      attributes: ["blue", "swirly", "centering", "vortexial"]
+    },
+    {
+      name: "Nebula",
+      image: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/hubble_lightsaber_image2.jpg",
+      attributes: ["gassy", "cloudy", "energy stream", "ionized particles"]
+    },
+    {
+      name: "Cluster",
+      image: "https://astronomy.com/-/media/Images/News%20and%20Observing/News/2019/01/galaxyclusters.jpg?mw=600",
+      attributes: ["chunky", "claustrophobic", "isolated", "family"]
+    }
+  ])
   return (
     <>
       <Routes>
@@ -69,6 +87,7 @@ const App = () => {
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
         <Route path='/the-different-things' element={<DifferentThings things={ramonsThings} />} />
+        <Route path='/the-universal-things' element={<DifferentThings things={joshThings} />} />
       </Routes>
     </>
   );
