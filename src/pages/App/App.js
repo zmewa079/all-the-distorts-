@@ -3,10 +3,20 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import DifferentThings from '../DifferentThings/DifferentThings'
 import Home from '../Home/Home';
 
 
 const App = () => {
+
+  const [ramonsThings] = useState ([
+    {
+    name: "Oil",
+    image: "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/bold-and-brash-dazzle-fillinheart.jpg",
+    attributes: ["elegant", "Posh", "Pretentious"]
+    }
+  ])
+
   const [davidsThings] = useState([
     {
       name: "waffle",
@@ -58,6 +68,7 @@ const App = () => {
         {/* All the <Route> components should live here */}
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
+        <Route path='/the-different-things' element={<DifferentThings things={ramonsThings} />} />
       </Routes>
     </>
   );
