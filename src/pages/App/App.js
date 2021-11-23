@@ -51,6 +51,23 @@ const App = () => {
       attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
     },
   ])
+  const [jansThings] = useState([
+    {
+      name: "books",
+      image: "https://pixabay.com/photos/old-books-book-old-library-436498/",
+      attributes: ["fun to read", "hobby", "collectable"]
+    },
+    {
+      name: "coffee",
+      image: "https://pixabay.com/photos/coffee-cappuccino-caf%c3%a9-closeup-2151200/",
+      attributes: ["strong", "cappuccino", "latte", "americano"]
+    },
+    {
+      name: "music",
+      image: "https://pixabay.com/photos/crowd-dance-party-people-1056764/",
+      attributes: ["kpop", "pop", "indie", "anything that sounds nice BUT country"]
+    },
+  ])
   return (
     <>
       <Routes>
@@ -62,5 +79,5 @@ const App = () => {
     </>
   );
 }
- 
+
 export default App;
