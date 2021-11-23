@@ -11,8 +11,9 @@ const Home = (props) => {
       <Link to="/the-well-styled-things">David's Things</Link><br/>
       <Link to="/the-different-things">Ramon's Things</Link><br/>
       <Link to="/the-universal-things">Josh's Things</Link><br/>
+      <Link to="/the-random-things">Jan's Things</Link><br/>
     </>
   );
 }
- 
+
 export default Home;
