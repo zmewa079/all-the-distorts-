@@ -2,7 +2,7 @@ import React from 'react';
 import ThingCard from '../../components/ThingCard/ThingCard'
 import { Link } from 'react-router-dom'
 
-const FunctionalThings = (props) => {
+const RandomThings = (props) => {
   return (
     <>
       <Link to="/">Home</Link>
@@ -14,4 +14,4 @@ const FunctionalThings = (props) => {
   )
 }
 
-export default FunctionalThings
+export default RandomThings

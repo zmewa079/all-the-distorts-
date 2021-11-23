@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import RandomThings from '../RandomThings/RandomThings';
 import Home from '../Home/Home';
 
 
@@ -54,17 +55,17 @@ const App = () => {
   const [jansThings] = useState([
     {
       name: "books",
-      image: "https://pixabay.com/photos/old-books-book-old-library-436498/",
+      image: "https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_960_720.jpg",
       attributes: ["fun to read", "hobby", "collectable"]
     },
     {
       name: "coffee",
-      image: "https://pixabay.com/photos/coffee-cappuccino-caf%c3%a9-closeup-2151200/",
+      image: "https://cdn.pixabay.com/photo/2017/03/17/10/29/coffee-2151200_960_720.jpg",
       attributes: ["strong", "cappuccino", "latte", "americano"]
     },
     {
       name: "music",
-      image: "https://pixabay.com/photos/crowd-dance-party-people-1056764/",
+      image: "https://cdn.pixabay.com/photo/2015/11/22/19/04/crowd-1056764_960_720.jpg",
       attributes: ["kpop", "pop", "indie", "anything that sounds nice BUT country"]
     },
   ])
@@ -75,6 +76,7 @@ const App = () => {
         {/* All the <Route> components should live here */}
         <Route path='/the-functional-things' element={<FunctionalThings things={shahzadsThings} />} />
         <Route path='/the-well-styled-things' element={<StyledThings things={davidsThings} />} />
+        <Route path='/the-random-things' element={<RandomThings things={jansThings} />} />
       </Routes>
     </>
   );
